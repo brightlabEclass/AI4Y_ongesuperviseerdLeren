@@ -1,0 +1,111 @@
+:root {
+  --primary-color: #474163;
+  --secondary-color: #413857;
+  --hover-color: #00c8ff;
+  --font-color: #f8f8f8;
+  --accent-color: #ff6487;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f2f2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* TITLE */
+
+#title-container {
+  background: var(--secondary-color);
+  color: var(--font-color);
+
+  padding: 1.5rem 2.5rem;
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+  width: 500px;
+}
+
+#title-container h1 {
+  font-size: 2.5rem;
+}
+
+/* GAME */
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#myCanvas {
+  border: 4px solid var(--primary-color);
+  border-radius: 15px;
+  background: white;
+}
+
+/* BUTTONS */
+
+#control-buttons {
+  display: flex;
+  justify-content: space-evenly;
+
+  /* GELIJKE BREEDTE ALS CANVAS */
+  width: 500px;
+}
+
+button {
+  width: 120px;
+  height: 50px;
+
+  border: none;
+  border-radius: 25px;
+
+  background: var(--primary-color);
+  color: var(--font-color);
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 0 var(--accent-color);
+  transition: all 0.15s ease;
+}
+
+button:hover {
+  background: var(--hover-color);
+}
+
+button:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+/* LOGO */
+
+#logo-container img {
+  margin: 1rem;
+  width: 500px;
+}
